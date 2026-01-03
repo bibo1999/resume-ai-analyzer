@@ -7,6 +7,7 @@ const Category = ({ title, score }: { title: string, score: number }) => {
         ? 'text-yellow-600' : 'text-red-600';
 
     return (
+        
         <div className="resume-summary">
             <div className="category">
                 <div className="flex flex-row gap-2 items-center justify-center">

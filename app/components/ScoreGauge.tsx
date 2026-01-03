@@ -24,8 +24,9 @@ const ScoreGauge = ({ score = 75 }: { score: number }) => {
                             x2="100%"
                             y2="0%"
                         >
-                            <stop offset="0%" stopColor="#a78bfa" />
-                            <stop offset="100%" stopColor="#fca5a5" />
+                            <stop offset="0%" stopColor="#C9A76A" />
+                            <stop offset="50%" stopColor="#F4E4C1" />
+                            <stop offset="100%" stopColor="#C9A76A" />
                         </linearGradient>
                     </defs>
 
@@ -33,12 +34,13 @@ const ScoreGauge = ({ score = 75 }: { score: number }) => {
                     <path
                         d="M10,50 A40,40 0 0,1 90,50"
                         fill="none"
-                        stroke="#e5e7eb"
+                        stroke="#1E293B"
                         strokeWidth="10"
                         strokeLinecap="round"
+                        opacity="0.2"
                     />
 
-                    {/* Foreground arc with rounded ends */}
+                    {/* Foreground arc with gold gradient */}
                     <path
                         ref={pathRef}
                         d="M10,50 A40,40 0 0,1 90,50"
@@ -52,7 +54,7 @@ const ScoreGauge = ({ score = 75 }: { score: number }) => {
                 </svg>
 
                 <div className="absolute inset-0 flex flex-col items-center justify-center pt-2">
-                    <div className="text-xl font-semibold pt-4">{score}/100</div>
+                    <div className="text-xl font-semibold pt-4 text-[#C9A76A]">{score}/100</div>
                 </div>
             </div>
         </div>
