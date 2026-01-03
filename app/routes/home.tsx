@@ -50,12 +50,12 @@ export default function Home() {
 
  <section className="main-section">
       <div className="page-heading py-16">
-        <h1>Track Your Applications & Resume Ratings</h1>
+        <h1>Monitor Your Applications & Enhance Resume Performance</h1>
 
         {!loadingResumes && resumes?.length === 0 ? (
-            <h2>No resumes found. Upload your first resume to get feedback.</h2>
+            <h2>You haven’t uploaded any resumes yet. Start by uploading your first resume and receive actionable insights.</h2>
         ): (
-          <h2 className="text-[#EEE4D0]">Review your submissions and check AI-powered feedback.</h2>
+          <h2 className="text-[#EEE4D0]">Review your uploaded resumes and get AI-powered insights to boost your chances with recruiters.</h2>
         )}
       </div>
       {loadingResumes && (
